@@ -1,0 +1,275 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@font-face {
+  font-family: 'SF Pro';
+  src: url(SFPro.ttf);
+}
+
+*{
+  font-family: 'SF Pro' !important;
+}
+
+
+
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;
+}
+
+
+/* here down */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.circle-wrap {
+  position: relative;
+  max-width: 567px;
+  overflow: hidden;
+}
+
+.circle-bg {
+fill: none;
+stroke: #151A20;
+stroke-width: 1.4;
+}
+
+.circle-wrap .circle {
+  
+}
+
+.circle-wrap.animate .circle {
+animation: progress 3s ease-out alternate-reverse infinite;
+}
+
+.circle-1 svg {
+  transform: rotate(93deg);
+}
+
+.circle-1 .circle {
+stroke: #F72585;
+fill: none;
+stroke-width: 1.1;
+stroke-linecap: round;
+}
+
+.circle-1 .circle-bg {
+  stroke-width: 1.1;
+}
+
+.circle-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100000;
+  width: 88%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.circle-2 svg {
+  transform: rotate(92deg);
+}
+
+.circle-2 .circle {
+  stroke: #5ED500;
+  fill: none;
+  stroke-width: 1.3;
+  stroke-linecap: round;
+}
+
+.circle-2 .circle-bg {
+  stroke-width: 1.3;
+}
+
+.circle-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100000;
+  width: 75%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.circle-3 svg {
+  transform: rotate(91deg);
+}
+
+.circle-3 .circle {
+  stroke: #6493F1;
+  fill: none;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+}
+
+.circle-3 .circle-bg {
+  stroke-width: 1.4;
+}
+
+.circle-4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100000;
+  width: 64%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.circle-4 svg {
+  transform: rotate(120deg);
+}
+
+.circle-4 .circle {
+  stroke: #FFD600;
+  fill: none;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+}
+
+.circle-4 .circle-bg {
+  stroke-width: 1.6;
+}
+
+.circle-5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100000;
+  width: 53%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.circle-5 svg {
+  transform: rotate(90deg);
+}
+
+.circle-5 .circle {
+  stroke: #57A146;
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+}
+
+.circle-5 .circle-bg {
+  stroke-width: 1.7;
+}
+
+.circular-chart {
+  max-width: 100%;
+  max-height: 567px;
+}
+
+
+
+@keyframes progress {
+0% {
+  stroke-dasharray: 0 100;
+}
+}
+
+.portfolio-image .blank {
+  position: absolute;
+  width: 65%;
+  height: 40%;
+  top: 14%;
+  left: 13%;
+  transform: rotate(345deg);
+  overflow: hidden;
+}
+
+.portfolio-image .screen {
+}
+
+@media screen and (min-width: 1700px) {
+  .portfolio-image .blank {
+      position: absolute;
+      width: 65%;
+      height: 40%;
+      top: 14%;
+      left: 10%;
+      transform: rotate(345deg);
+      overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .portfolio-image .blank {
+      position: absolute;
+      width: 65%;
+      height: 39%;
+      top: 15%;
+      left: 14%;
+      transform: rotate(345deg);
+      overflow: hidden;
+  }
+
+}

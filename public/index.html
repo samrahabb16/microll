@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> 
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> 
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script>
+
+    const nodeList = document.querySelectorAll(".circle");
+    for (let i = 0; i < nodeList.length; i++) {
+      nodeList[i].style.strokeDasharray = "0 100";
+    }
+
+
+    var element = document.getElementById('circle-wrap');
+    var elementHeight = element.clientHeight;
+
+    document.addEventListener('scroll', animate);
+
+    let inView = () => {
+      var windowHeight = window.innerHeight;
+      var scrollY = window.scrollY || window.pageYOffset;
+
+      var scrollPosition = scrollY + windowHeight;
+      var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
+
+      if (scrollPosition > elementPosition) {
+        return true;
+      }
+
+      return false;
+    }
+
+    function animate() {
+      if (inView()) {
+        element.classList.add('animate');
+        for (let i = 0; i < nodeList.length; i++) {
+          nodeList[i].style.strokeDasharray = "";
+        }
+      }
+    }
+
+  </script>
+</body>
+
+</html>
